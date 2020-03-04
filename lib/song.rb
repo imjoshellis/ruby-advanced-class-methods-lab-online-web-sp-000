@@ -30,14 +30,12 @@ class Song
   end
 
   def self.alphabetical
-    @@all.sort
+    @@all.name.sort
   end
 
   def self.destroy_all
     @@all == []
   end
-
-  
 
   def self.all
     @@all
