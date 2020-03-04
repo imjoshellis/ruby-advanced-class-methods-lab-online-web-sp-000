@@ -25,7 +25,7 @@ class Song
     @@all.find{|s| s.name == name}
   end
 
-  def find_or_create_by_name(name)
+  def self.find_or_create_by_name(name)
     if @@all.find{|s| s.name == name}
       return @@all.find{|s| s.name == name}
     else
