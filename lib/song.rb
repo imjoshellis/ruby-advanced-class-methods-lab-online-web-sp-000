@@ -37,7 +37,7 @@ class Song
     arr = filename.split(/\W-\W|\./)
     song = self.new
     song.name = arr[1]
-    song.artist = arr[0]
+    song.artist_name = arr[0]
     song
   end
 
