@@ -1,3 +1,5 @@
+require 'pry'
+
 class Song
   attr_accessor :name, :artist_name
   @@all = []
@@ -30,7 +32,9 @@ class Song
   end
 
   def self.alphabetical
+binding.pry
     @@all.name.sort
+
   end
 
   def self.new_from_filename(filename)
